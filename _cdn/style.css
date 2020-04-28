@@ -1,0 +1,1060 @@
+/***********************************AULA 05.03*/
+
+/*O seletor .main_header é meu cabeçalho principal eu vou fazer o menu dentro dele.*/
+/*width = coloco a macação com o width em 100% de largura e a cor de fundo desejada*/
+/*so funciona se eu já estiver feito a marcação do header, logo e menu*/
+.main_header{
+    width: 100%;
+    background-color:#008C8C;
+    background-size: inherit;
+    background-image: linear-gradient(45deg, white, #008C8C);
+}
+/*o seletor .main_header_content é a estilização do conteúdo dentro da div*/
+/*max-width = o max-width é para definir a largura máxima do content*/
+/*margin = a margem será nenhuma de cima e enbaixo por isso p zero e automatica para direita e esquerda, assim o conteúdo fica centralizado*/
+/*display = O display é para div ficar flexível e adequar o tanaho confome necessário*/
+.main_header_content{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+}
+/*o seletor .logo é para marcar a logo do menu principal*/
+/*padding = é o espaçamento interno que eu desejo entre a logo e o content, aqui decidir deixar 0px se quiser nem preciso deixar la*/
+/*width =  aqui o width é de 381 que a largura da logo que eu tenho servida*/ 
+/*flex-basis = é para deixar a logo flexivel, aqui deve ser o somatório de with + 2 vezes o pading*/ 
+.logo{
+    flex-basis: 401px;
+/*    padding: 10px;*/
+    width: 381px;
+}
+
+/*o seletor .main_header_content_menu marca o conteúdo do meu menu*/
+/*flex-basis = esse é responsável pela ocupação do menu na dobre restante do menu entãoi el ocupa p espaço de 100% - a largura da logo*/
+/*display = é responsável por deixar o menu flexivel*/
+/*justify-content = é responsável por deixar o menu no local desejado o flex-end deixa o menu no final do content*/
+.main_header_content_menu{
+    flex-basis: calc(100% - 401px);
+    display: flex;
+    justify-content: flex-end;
+}
+
+/*Aqui a ul é estilizada*/
+/*passo o display = é responsável por deixar o menu flexivel*/
+/*align-items para deixar tudo em fila*/
+.main_header_content_menu ul{
+    display: flex;
+    align-items: stretch;
+}
+
+/*agora trabalho na li que é cada menu*/
+/*list-style: none = é usado para eu tirar cada bolinha que tenho na frente da lista*/
+/*passo o display = é responsável por deixar o menu flexivel*/
+/*align-items: center = esse comando é para o linha ficar no centro do contente de cima abaixo*/
+.main_header_content_menu ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+/*Agora para trabalhar com o elemento a*/
+/*padding = primeiro o cima baixo com 0 e a distância entre eles direita e esquerda em 16px*/
+/*passo o display = é responsável por deixar o menu flexivel*/
+/*align-items: center = esse comando é para o linha ficar no centro do contente de cima abaixo*/
+/*height: 100% = aqui é a altura do meu menu, e como é 100% ele ocupa todo espaço de acima abaixo.
+/*Com 30% ele ocupa 30%do espaço, aos lados do menu*/ 
+.main_header_content_menu ul li a{
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    height: 30%;
+    color: whitesmoke;
+}
+
+/*Aqui é a sombra q aparece quando eu passo o mouse sobre o iconi*/
+
+.main_header_content_menu ul li a:hover{
+    color: whitesmoke;
+    background-color: #4931EB;
+    height: 30%;
+}
+
+
+/*PRIMEIRA DOBRA DO SITE*************************************************************************************************************/
+/************************************************************************************************************************************
+AULA 05.04*/
+/*width efino a largura de 110%*/
+/*background-coloar é acor de fundo ou imagem de fundo*/
+
+.main_cta{
+    width: 100%;
+    /*background-image: url('../_img/fundo-1-d.png');*/
+    background-color: #008C8C;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/*decido o máximo de largura e as margens*/
+.main_cta_content{
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+
+/*Aqui personalizo o texto q está no h1 dentro da div q criei*/
+.main_cta_content h1{
+    font-size: 2.6em;
+    color: whitesmoke;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Aqui personalizo o texto q está no parágrafo dentro da div q criei*/
+.main_cta_content p{
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-weight: 300;
+    text-align: center;
+    margin: 40px 0;
+}
+
+/*Aqui personalizo o botão q criei*/
+.main_cta_content .btn{
+    background-color: #4931EB;
+    color: #FFF;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.main_cta_content .btn:hover {
+    background-color: whitesmoke;
+    color: #008C8C;
+    font-size: 0.8em;
+    padding: 10px 40px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+.main_cta .main_cta_content .main_cta_content_spacer{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding:160px  40px;
+    margin-bottom: -100px;
+}
+
+
+/*SEGUNDA DOBRA*********************************************************************************************************************/
+/************************************************************************************************************************************
+/***********************************AULA 00.00*/
+
+
+
+
+
+/*TERCEIRA DOBRA DO SITE*/
+/***********************************AULA 05.04*/
+/*width defino a largura de 100%; aqui é o máximo de largura e as margens*/
+/*background-color: é a cor de fundo ou imagem de fundo*/
+
+.main_autor{
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+/*o seletor .main_header_content é a estilização do conteúdo dentro da div*/
+/*max-width = o max-width é para definir a largura máxima do content*/
+/*margin = a margem será: zero em cima e embaixo;  automatica para direita e esquerda, assim o conteúdo fica centralizado*/
+/*display = O display é para div ficar flexível e adequar o tanaho confome necessário*/
+.main_autor_content{
+    max-width:calc(1300px- 160px);
+    margin: 0 auto;
+    padding: 0 180px;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+}
+
+
+
+
+
+.bg-cristal{background-color:  #d5d5d3; color:whitesmoke;}
+
+/*____________________________________________________________________*/
+/*SESSÃO DE TÍTULO - SERVE PARA TÍTULOS, VOU FAZER VÁRIOS TÍTULOS*/
+/*_______________________________________________________________________*/
+.sectiontitle{float: left; width: 100%;  text-align: center; margin-top: 20px; margin-bottom: 10px;}
+.sectiontitle h1{font-size: 2.6em; font-weight: bold; margin-bottom: 30px; color: #4b67a1;}
+
+/*BLOCO DEPOIMENTOS E AGENDE HORÁRIO - leia os depoismentos - ligue -*/
+.sectiontitle .tagline{font-size: 2.4em; font-weight: 300;}
+.sectiontitle-nomargin, articletitle-nomargin{margin: 0 !important;}
+
+
+.sectiontitle h2{font-size: 4.4em; font-weight: 300; margin-bottom: 30px;}
+.sectiontitle h3{font-size: 3.4em; font-weight: 300;margin-bottom:15px;}
+.sectiontitle h4{font-size: 2.0em; font-weight: 300; margin-bottom: 15px;color: #008C8C;}
+
+.sectiontitle-inicio{float: left; width: 100%; color: whitesmoke; text-align: center; margin-top: 30px; margin-bottom: 20px;}
+
+/*BLOCO DE CAPA -não trato dor*/
+.sectiontitle-inicio .tagline{font-size: 2.4em; font-weight: 300;}
+.sectiontitle-inicio h1 {font-size: 3.2em; font-weight: bold; margin-bottom: 30px;color: white;}
+.sectiontitle-inicio h2 {font-size: 1.8em; font-weight: 400; margin-top: 20px; color: white;}
+.sectiontitle-inicio h3 {font-size: 1.8em; color: pink;}
+
+
+/*
+____________________________________________________________________
+SESSÃO DE TÍTULO - SERVE PARA TÍTULOS, VOU FAZER VÁRIOS TÍTULOS
+_______________________________________________________________________
+*/
+.sectiontitle{float: left; width: 100%;  text-align: center; margin-top: 30px; margin-bottom: 10px;}
+.sectiontitle h1{font-size: 2.6em; font-weight: bold; margin-bottom: 30px; color: #4b67a1;}
+
+/*BLOCO DEPOIMENTOS E AGENDE HORÁRIO - leia os depoismentos - ligue -*/
+.sectiontitle .tagline{font-size: 2.4em; font-weight: 300;}
+.sectiontitle-nomargin, articletitle-nomargin{margin: 0 !important;}
+
+
+/*
+
+.round{-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+
+____________________________________________________________________
+CAIXAS BOX
+____________________________________________________________________
+*/
+.box{width: auto; float: left; margin: 20px 0;}
+.box-line{float: left; width: 100%;}
+.box-small{width: 22.75%; margin-right: 3%;}
+.box-medium{width: 30%;  margin-right: 5%;}
+.box-large{width: 46.5%; margin-right: 7%;}
+.box-forthree{width: 64%;}
+.box-forthreesmall{width: 30%;}/*
+
+
+*/.box-foto{width: 60%; text-align: center; padding: 15px 20px;min-width: 200px; background-color: whitesmoke; margin-top: 60px;}
+.box-foto h1{text-align: center; font-size: 2em; padding: 5px 0px;color:grey;}
+.box-foto .tagline { font-size: 13px; line-height: 1.4; color:grey;}
+.tagline {font-size: 0.8em;}
+.box-apresentacao{
+    color:grey; 
+    width: 100%; 
+    text-align: justify;
+    padding: 10px 10px 23px 40px;
+    min-width: 200px;
+}
+
+
+.articletitle{float: left; width: 100%; margin-top: 20px; margin-bottom: 30px;}
+.articletitle h1{font-size: 1.35em; margin-bottom: 2%;}
+
+/*BLOCO SEJA BEM-VINDO E NOSSA LOCALIZAÇÃO - Apaixonado - nossa localização*/
+.articletitle .tagline{font-size: 1em; margin-bottom: 2%;}
+
+
+.box-large1{width: 48%; margin-right: 4%; margin-bottom: 20px; min-width: 200px;}
+.box-large1{width: 50%; margin-right: 0%; margin-bottom: 20px; min-width: 200px}
+.box-large-formulario{width: 45%; margin-right: 5%; margin-bottom: 20px; min-width: 200px}
+
+.box-full{width: 100%; margin:0px;}
+
+.box-medium1 {width: 30%;  margin-right: 5%; padding: 25px 30px; margin-bottom: 20px; min-width: 250px; color:#4b67a1;text-align: center;}
+.box-medium1 h2 {width: 100%; text-align: center; margin-bottom: 20px; min-width: 200px; color:#4b67a1;font-size: 1.4em;font-weight: bold;}
+.box-medium1:hover{background: whitesmoke; color:#4b67a1; 
+                   -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,8);
+                   -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,8);
+                   box-shadow: 0px 3px 3px 0px rgba(0,0,0,8);}
+.fas {font-size: 4em; margin-bottom: 30px; text-align: center;}
+
+/*____________________________________________________________________
+HELPERS - APLICAR SOBRE EM TEXTO | SOMBRA NA CAIXA | BORDA REDONDA GRANDE E PEQUENA | ULTIMO ELEMENTO SEM MARGEM
+____________________________________________________________________*/
+
+.textshadow{text-shadow: 1px 1px 0 #ccc;}
+.boxshadow{-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3); -moz-box-shadow:0px 3px 3px 0px rgba(0,0,0,0.3); box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.3);}
+.radius1{-webkit-border-radius: 50px; -moz-border-radius: 50px; border-radius: 50px; margin-bottom: 50px;}
+.radius{-webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+.round{-webkit-border-radius: 50%; -moz-border-radius: 50%; border-radius: 50%;}
+.last{margin-right: 0 !important;}
+.clear{clear: both;}
+.material-icons {font-size: 3em;}
+
+.container{float: left; width:100%;}
+.content-large{width:100%;}
+.content{margin: 0 10%; padding: 10px 0;width: 80%;}
+.content-footer{margin: 0 10%; padding: 10px 0;width: 80%;}
+.content-page{padding:  60px 0;}
+
+.tagline3{width: 100%; text-align:justify; font-size: 1.15em; line-height: 1.4; color:grey;}
+.tagline3 i{color: blue;}
+.tagline3 i:hover{color: blue;}
+
+.tagline1{width: 100%; text-align:justify; font-size: 2em; line-height: 1.4; color:grey;}
+
+
+/*
+____________________________________________________________________
+ALINHAMNETO DE TEXTO - ALIGN
+____________________________________________________________________
+.al-left{text-align: left;}
+.al-right{text-align: right;}
+.al-center{text-align: center;}
+
+.main_tutor_content
+
+.main_tutor_content header h1{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.main_tutor_content_img{
+    margin: 20px auto;
+}
+
+.main_tutor_content_img img{
+    max-width: 200px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    padding: 3px;
+    background-color: #FFF;
+}
+
+.main_tutor_content_history h2{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main_tutor_content_history p{
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.main_tutor_social_network{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #D36833;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.main_tutor_social_network > header{
+    flex-basis: 100%;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main_tutor_social_network > article{
+    flex-basis: 24%;
+}
+
+.main_tutor_social_network > article h3{
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+
+.main_tutor_social_network > article h3 a{
+    background-color: #FFF;
+    color: #D36833;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.main_tutor_social_network > article h3 a:hover{
+    background-color: #2D3142;
+    color: #FFF;
+}*/
+
+
+
+
+/*
+ MAIN_BLOG 
+
+.main_blog{
+    max-width: calc(1300px - 40px);
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main_blog .main_blog_header{
+    flex-basis: 100%;
+    margin: 30px 0;
+}
+
+.main_blog .main_blog_header h1{
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+}
+
+.main_blog article{
+    opacity: 0.7;
+    flex-basis: calc(25% - 20px);
+    margin-bottom: 30px;
+}
+
+.main_blog article:hover{
+    opacity: 1;
+}
+
+.main_blog article img{
+    width: 100%;
+}
+
+.main_blog article p{
+    margin: 10px 0; 
+}
+
+.main_blog article .category{
+    font-size: 0.875em;
+    color: #D36833;
+}
+
+.main_blog article h2{
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.main_blog article h2 a{
+    color: #333;
+    font-weight: 300;
+}
+
+ OPTIN 
+
+.main_optin{
+    width: 100%;
+    background-color: #2D3142;
+    margin: 40px 0;
+}
+
+.main_optin_content{
+    max-width: calc(1300px - 40px);
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.main_optin_content header, .main_optin_content form{
+    flex-basis: 50%;
+}
+
+.main_optin_content header h1, .main_optin_content header p{
+    color: #FFF;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.main_optin_content header h1{
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.main_optin_content header p{
+    font-weight: 300;
+    font-size: 0.875em;
+}
+
+.main_optin_content form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_optin_content form input[type=text], .main_optin_content form input[type=email]{
+    flex-basis: 37%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border: none;
+    padding: 0px 10px;
+}
+
+.main_optin_content form button{
+    flex-basis: 20%;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    color: #FFF;
+    background-color: #D36833;
+    border: none;
+    font-size: 0.875em;
+}
+
+.main_course{
+    width: 100%;
+}
+
+.main_course .main_course_header{
+    max-width: 780px;
+    padding: 0 20px;
+    margin: 0 auto;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.main_course .main_course_header img{
+    margin-bottom: 20px;
+}
+
+.main_course .main_course_header h1{
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.main_course_content{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.main_course_content article{
+    flex-basis: calc(50% - 40px);
+    margin: 20px 0;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+}
+
+.main_course_content article h1{
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 4px;
+}
+.main_course_content article h2{
+    font-size: 1.3em;
+    color: #333;
+    margin-bottom: 4px;
+}
+
+.main_course_content article p{
+    font-size: 0.9em;
+    color: #333;
+}
+
+.main_course_fullwidth{
+    width: 100%;
+    background-color: #D36833; 
+    padding: 40px 0;
+}
+
+.main_course_rating_content{
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.main_course_rating_content_title{
+    color: #FFF;
+    text-align: center;
+}
+
+.main_course_rating_content_title h2{
+    font-size: 2.4em;
+    margin-bottom: 20px;
+}
+
+.main_course_rating_content_comment{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_course_rating_content_comment > header{
+    flex-basis: 100%;
+    color: #FFF;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.main_course_rating_content_comment > article{
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
+    background-color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+    color: #333;
+}
+
+.main_course_rating_content_comment > article h3{
+    font-size: 1.2em;
+    margin-bottom: 4px;
+}
+
+.main_course_rating_content_comment > article img{
+    width: 15px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+ SCHOOL 
+
+.main_school{
+    width: 100%;
+}
+
+.main_school_content{
+    max-width: 1300px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_school_header{
+    flex-basis: 100%;
+    padding: 40px 0;
+    color: #333;
+}
+
+.main_school_header h1{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.main_school_content_left{
+    flex-basis: calc(70% - 20px);
+}
+
+.main_school_content_left_content > header > p{
+    padding: 10px 10px;
+    background-color: #2D3142;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.main_school_content_left_content > header > p span{
+    margin-left: 20px;
+}
+
+.main_school_content_left_content > header > p a{
+    color: #FFF;
+    font-size: 0.9em;
+}
+
+.main_school_content_left_content > header > p a:hover{
+    text-decoration: underline;
+}
+
+.main_school_content_left_content > header > h2{
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.main_school_content_left_content > p{
+    margin-bottom: 20px;
+}
+
+.main_school_list{
+    width: 100%;
+    background-color: #EBEBEB;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main_school_list > header{
+    flex-basis: 100%;
+    color: #D36833;
+    margin-bottom: 20px;
+}
+
+.main_school_list > article{
+    flex-basis: calc(50% - 10px);
+    margin: 4px 0;
+}
+
+.main_school_list > article h3{
+    font-weight: 300;
+}
+
+.main_school_content_right{
+    flex-basis: 30%;
+}
+
+.main_school_content_right img{
+    width: 100%;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.main_school_address{
+    flex-basis: 100%;
+    padding: 45px 0;
+    text-align: center;
+}
+
+.main_school_address h2{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.main_optin_footer{
+    width: 100%;
+    background-color: #F7F7F7;
+}
+
+.main_optin_footer_content{
+    max-width: 1300px;
+    padding: 40px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.main_optin_footer_content h1{
+    font-size: 1.4em;
+    margin-bottom: 40px;
+}
+
+.main_optin_footer_content .btn{
+    color: #FFF;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background-color: #D36833;
+    font-size: 1.2em;
+    padding: 10px 20px;
+}
+
+.main_footer{
+    max-width: 1300px;
+    padding: 40px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    color: #333;
+}
+
+.main_footer > header {
+    flex-basis: 100%;
+}
+
+.main_footer > header h1{
+    font-size: 1.4em;
+    margin-bottom: 40px;
+}
+
+.main_footer_our_pages, .main_footer_links{
+    flex-basis: 25%;
+}
+
+.main_footer_about{
+    flex-basis: 50%;
+}
+
+.main_footer > article h2{
+    margin-bottom: 20px;
+}
+
+.main_footer > article ul li{
+    list-style: none;
+    margin: 5px 0;
+}
+
+.main_footer > article ul li a{
+    color: #333;
+}
+
+.main_footer > article ul li a:hover{
+    text-decoration: underline;
+}
+
+.main_footer_rights{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    background-color: #F7F7F7;
+    border-top: 1px solid #EBEBEB;
+    font-size: 0.9em;
+    color: #666;
+    font-weight: 300;
+}
+
+
+
+
+
+.main_header_content_menu_mobile{
+    flex-basis: calc(100% - 330px);
+    display: none;
+    justify-content: flex-end;
+}
+
+.main_header_content_menu_mobile ul {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.main_header_content_menu_mobile ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+
+.main_header_content_menu_mobile_obj{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #D36833;
+    border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+}
+
+.main_header_content_menu_mobile_obj:hover, .main_header_content_menu_mobile_obj_active{
+    background-color: #FFF;
+}
+
+.main_header_content_menu_mobile_sub{
+    min-width: 200px;
+    background-color: #FFF;
+    border-radius: 4px 0 4px 4px;
+    -moz-border-radius: 4px 0 4px 4px;
+    -webkit-border-radius: 4px 0 4px 4px;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 100%;
+    right: -20px;
+}
+
+.main_header_content_menu_mobile_sub > li{
+    flex-basis: 100%;
+}
+
+.main_header_content_menu_mobile_sub > li a {
+    width: 100%;
+    text-align: center;
+    color: #D36833;
+    padding: 10px 0;
+}
+
+.main_header_content_menu_mobile_sub > li a:hover{
+    background-color: #D36833;
+    color: #FFF;
+}
+
+ 1024px 
+@media (max-width: 64em){
+    .main_cta .main_cta_content h1{
+        font-size: 2.5em;
+    }
+    
+    .main_cta .main_cta_content .main_cta_content_spacer{
+        padding: 100px 30px;
+    }
+    
+    .main_optin_content{
+        flex-wrap: wrap;
+    }
+    
+    .main_optin_content header, .main_optin_content form{
+        flex-basis: 100%;
+        margin: 0 auto;
+    }
+    
+    .main_optin_content header{
+        margin-bottom: 20px;
+    }
+    
+    .main_optin_content header h1, .main_optin_content header p{
+        text-align: center;
+    }
+    
+    .main_optin_content form input[type=text], .main_optin_content form input[type=email]{
+        padding: 6px 12px;
+    }
+    
+    .main_school_content_left{
+        flex-basis: 100%;
+    }
+    
+    .main_school_content_right{
+        flex-basis: 200px;
+        max-width: 200px;
+        padding: 20px;
+    }
+    
+    .main_school_address{
+        flex-basis: calc(100% - 200px);
+        margin: auto;
+    }
+}
+
+ 768px 
+@media (max-width: 48em){
+    .main_header_content_menu{
+        display: none !important;
+    }
+    
+    .main_header_content_menu_mobile{
+        display: flex;
+    }
+    
+    .main_cta .main_cta_content h1{
+        font-size: 2em;
+    }
+    
+    .main_cta .main_cta_content .main_cta_content_spacer{
+        padding: 60px 30px;
+    }
+    
+    .main_cta .main_cta_content .btn{
+        font-size: 0.5em;
+    }
+    
+    .main_blog article{
+        flex-basis: calc(33% - 10px);
+    }
+    
+    .main_course_rating_content_title h2{
+        font-size: 2em;
+    }
+    
+    .main_school_list > article{
+        flex-basis: 100%;
+        margin: 10px 0;
+        font-size: 0.9em;
+        line-height: 2em;
+    }
+    
+    .main_tutor_social_network h2{
+        margin-bottom: 20px;
+    }
+    
+    .main_tutor_social_network{
+        max-width: 80%;
+    }
+    
+    .main_tutor_social_network > article{
+        flex-basis: 49%;
+        margin-bottom: 20px;
+    }
+    
+    .main_footer_our_pages, .main_footer_links{
+        flex-basis: calc(50% - 10px);
+    }
+    
+    .main_footer_about{
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+}
+
+ 640px 
+@media (max-width: 40em){
+    .main_blog article{
+        flex-basis: calc(50% - 10px);
+    }
+    
+    .main_optin_content form{
+        flex-wrap: wrap;
+    }
+    
+    .main_optin_content form input[type=text], .main_optin_content form input[type=email]{
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .main_optin_content form button{
+        margin: 0 auto;
+        padding: 6px 12px;
+    }
+    
+    .main_course_rating_content_title h2{
+        font-size: 1.6em;
+    }
+    
+    .main_course_rating_content_comment > header{
+        font-size: 1.2em;
+    }
+    
+    .main_course_rating_content_comment > article{
+        flex-basis: 100%;
+    }
+}
+
+ 580px 
+@media (max-width: 36em){
+    .main_tutor_social_network > article{
+        flex-basis: 100%;
+    }
+}
+
+ 520px 
+@media (max-width: 32em){
+    .main_school_content_right{
+        display: none;
+    }
+    
+    .main_school_address{
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 31em){
+    .main_school_address: 80%;
+}
+
+ 480px 
+@media (max-width: 30em){
+    .main_header .main_header_content .logo{
+        flex-basis: 220px !important
+    }
+    
+    .main_header .main_header_content .logo img{
+        width: 100% !important;
+    }
+    
+    .main_header_content_menu_mobile{
+        flex-basis: calc(100% - 220px) !important;
+    }
+    
+    .main_blog article{
+        flex-basis: 100%;
+    }
+    
+    .main_course_content article{
+        flex-basis: calc(100% - 40px);
+        margin: 10px 0;
+    }
+}*/

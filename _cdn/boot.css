@@ -1,0 +1,13 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 1em;
+    /*Aqui é a fonte do meu site*/
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.ds_none{
+    display: none !important;
+}
